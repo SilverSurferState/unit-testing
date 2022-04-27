@@ -3,6 +3,8 @@ package ex01_arrays;
 //versie umberto
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.IntStream;
 
 public class ArrayOfInts {
 
@@ -28,6 +30,15 @@ public class ArrayOfInts {
         for (int i : arrayOfInts)
             if (i % 2 == 0) even[evenLength++] = i;
         return sumOfInts(even);
+    }
+
+    public int sumOfXLargest(int[] arrayOfInts, int amountOfNumbers){
+        if (arrayOfInts == null) return 0;
+        int size = arrayOfInts.length;
+        int[] sorted  = IntStream.of(arrayOfInts).boxed()
+                .sorted(Collections.reverseOrder())
+                .mapToInt(value -> value).toArray();
+        return sumOfInts(Arrays.copyOf(sorted, amountOfNumbers));
     }
 
     public static void main(String[] args) {
