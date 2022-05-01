@@ -10,6 +10,6 @@ public class Product {
     }
 
     public String productDescription(){
-        return "• " + size + "CL " + percentage +"%";
+        return "• " + size + "CL " + ((percentage % 1 == 0) ? String.valueOf((int)percentage) : percentage) +"%";
     }
 }
