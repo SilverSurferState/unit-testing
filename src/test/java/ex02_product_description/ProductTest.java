@@ -18,4 +18,11 @@ public class ProductTest {
         assertEquals("• 25CL 5%", product.productDescription());
     }
 
+    @Test
+    void thirdTestWithXDecimalPlacesPercentage(){
+        Product product = new Product("Gin", 75, 34.3055);
+        assertEquals("• 75CL 34.3%", product.productDescription());
+    }
+
+
 }
