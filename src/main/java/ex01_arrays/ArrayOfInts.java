@@ -34,7 +34,6 @@ public class ArrayOfInts {
 
     public int sumOfXLargest(int[] arrayOfInts, int amountOfNumbers){
         if (arrayOfInts == null) return 0;
-        int size = arrayOfInts.length;
         int[] sorted  = IntStream.of(arrayOfInts).boxed()
                 .sorted(Collections.reverseOrder())
                 .mapToInt(value -> value).toArray();
