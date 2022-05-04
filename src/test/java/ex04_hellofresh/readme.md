@@ -30,7 +30,7 @@ Schrijf eerst een class Ingredient. Een Recipe class zal een lijst bevatten met 
 bevatten:
 
 * naam
-  * bvb zout, bloem, suiker
+  * bvb zout, bloem, suikTer
 * unit (of naam) van het Ingredient in enkelvoud - en indien nodig ook in meervoud
   * bvb: units alleen mogelijk in enkelvoud: gram, cl
   * bvb: units mogelijk in enkelvoud/meervoud: stuk/stuks, eetlepel/eetlepels, zakje/zakjes
