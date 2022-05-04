@@ -10,31 +10,31 @@ class ArrayOfIntsFunctie2Test {
 
     @Test
     void test1() {
-        int result = arrayOfInts.functie2(new int[]{2, 4});
+        int result = arrayOfInts.sumOfEvenInts(new int[]{2, 4});
         assertEquals(6, result);
     }
 
     @Test
     void test2() {
-        int result = arrayOfInts.functie2(new int[]{1, 2, 7, 6});
+        int result = arrayOfInts.sumOfEvenInts(new int[]{1, 2, 7, 6});
         assertEquals(8, result);
     }
 
     @Test
     void test3() {
-        int result = arrayOfInts.functie2(new int[]{7, 1, 3});
+        int result = arrayOfInts.sumOfEvenInts(new int[]{7, 1, 3});
         assertEquals(0, result);
     }
 
     @Test
     void tets4() {
-        int result = arrayOfInts.functie2(new int[]{});
+        int result = arrayOfInts.sumOfEvenInts(new int[]{});
         assertEquals(0, result);
     }
 
     @Test
     void test5() {
-        int result = arrayOfInts.functie2(null);
+        int result = arrayOfInts.sumOfEvenInts(null);
         assertEquals(0, result);
     }
 
